@@ -1,11 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+bundle install to install gems
 
 Things you may want to cover:
 
 * Ruby version
+
+Rails version: 6.1.2.1
+
+Ruby version: ruby 2.7.2p137
 
 * System dependencies
 
