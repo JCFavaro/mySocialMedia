@@ -1,5 +1,8 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: %i[ show edit update destroy ]
+  #If a user is not authenticate, don't let do anything except index and show methods
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /tweets or /tweets.json
   def index
@@ -12,7 +15,8 @@ class TweetsController < ApplicationController
 
   # GET /tweets/new
   def new
-    @tweet = Tweet.new
+    #@tweet = Tweet.new We don't want all Tweets, just the tweets that belong to us
+    @tweet = current_user.tweets.build
   end
 
   # GET /tweets/1/edit
@@ -21,7 +25,10 @@ class TweetsController < ApplicationController
 
   # POST /tweets or /tweets.json
   def create
-    @tweet = Tweet.new(tweet_params)
+    #We don't want all Tweets, just the tweets that belong to us
+    #@tweet = Tweet.new(tweet_params)
+    #so
+    @tweet = current_user.tweets.build(tweet_params)
 
     respond_to do |format|
       if @tweet.save
@@ -56,6 +63,12 @@ class TweetsController < ApplicationController
     end
   end
 
+  def correct_user 
+    @tweet = current_user.tweets.find_by(id: params[:id])
+    #If not
+    redirect_to tweets_path, notice: "Not authorize to edit this tweet - Don't do that" if @tweet.nil?
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_tweet
@@ -64,6 +77,6 @@ class TweetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tweet_params
-      params.require(:tweet).permit(:body)
+      params.require(:tweet).permit(:body, :user_id)
     end
 end
