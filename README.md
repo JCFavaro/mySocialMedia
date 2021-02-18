@@ -26,7 +26,7 @@ Simple twitter clon, we can:
 ## Built with 🛠️
 
 * [Ruby on Rails](https://rubyonrails.org/)
-* [Devise gem to manage user](https://github.com/heartcombo/devise)
+* [Devise gem](https://github.com/heartcombo/devise) to handle user management
 * [Bootstrap CSS for frontend](https://getbootstrap.com/)
 
 ## 📋
