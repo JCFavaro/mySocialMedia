@@ -5,11 +5,7 @@
 - **bundle install** to install gems
 - **yarn**
 
-* Ruby version
-
 - **Ruby version**: ruby 2.7.2p137
-
-* Rails version 
 
 - **Rails version**: 6.1.2.1
 
