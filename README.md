@@ -36,4 +36,4 @@ Simple twitter clon, we can:
 - [ ] Soon
 
 ---
-⌨️ con ❤️ por [Juan Cruz Favaro](https://github.com/JCFavaro) 😊
+⌨️ with ❤️ by [Juan Cruz Favaro](https://github.com/JCFavaro) 😊
