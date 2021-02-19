@@ -2,12 +2,10 @@
 
 ## Before run 🔧
 
+Clone this repository and run this commands in white bold
+
 - **bundle install** to install gems
 - **yarn**
-
-- **Ruby version**: ruby 2.7.2p137
-
-- **Rails version**: 6.1.2.1
 
 ## Description 🚀
 
@@ -21,7 +19,8 @@ Simple twitter clon, we can:
 
 ## Built with 🛠️
 
-* [Ruby on Rails](https://rubyonrails.org/)
+* **Ruby version ruby 2.7.2p137**
+* [Ruby on Rails](https://rubyonrails.org/) version 6.1.2.1
 * [Devise gem](https://github.com/heartcombo/devise) to handle user management
 * [Bootstrap CSS for frontend](https://getbootstrap.com/)
 
@@ -30,7 +29,7 @@ Simple twitter clon, we can:
 - Model-View-Controller (MVC) architecture
 - CRUD operations
 - Authentication
-- Authorization
+- Authorization, just can modify or delete our tweets.
 
 ## Deploy 📦
 
