@@ -1,27 +1,40 @@
-# README
+# mySocialMedia
 
-bundle install to install gems
+## Before run 🔧
 
-Things you may want to cover:
+- **bundle install** to install gems
+- **yarn**
 
-* Ruby version
+- **Ruby version**: ruby 2.7.2p137
 
-Rails version: 6.1.2.1
+- **Rails version**: 6.1.2.1
 
-Ruby version: ruby 2.7.2p137
+## Description 🚀
 
-* System dependencies
+Simple twitter clon, we can: 
 
-* Configuration
+- Create an account
+- Edit this account, email or password
+- Write tweets
+- Edit, show and delete tweets
+- See others tweets
 
-* Database creation
+## Built with 🛠️
 
-* Database initialization
+* [Ruby on Rails](https://rubyonrails.org/)
+* [Devise gem](https://github.com/heartcombo/devise) to handle user management
+* [Bootstrap CSS for frontend](https://getbootstrap.com/)
 
-* How to run the test suite
+## 📋
 
-* Services (job queues, cache servers, search engines, etc.)
+- Model-View-Controller (MVC) architecture
+- CRUD operations
+- Authentication
+- Authorization
 
-* Deployment instructions
+## Deploy 📦
 
-* ...
+- [ ] Soon
+
+---
+⌨️ con ❤️ por [Juan Cruz Favaro](https://github.com/JCFavaro) 😊
