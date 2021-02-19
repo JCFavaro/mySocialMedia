@@ -2,14 +2,11 @@
   <%= link_to 'My Social App', root_path , class:"navbar-brand mt-5" %>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav flex-column">
-      <li class="nav-item">
-        <%= link_to 'About Us', about_path ,class:"nav-link active my-4 h5"%>
-      </li>
       <% if user_signed_in? %>
-        <li class="nav-item dropdown dropright">
-          <span class="nav-link text-white text-capitalize dropdown-toggle my-4 h5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="dropdown dropend">
+          <button id="buttonNav" class="nav-link text-white btn btn-lg decoration-none text-capitalize dropdown-toggle my-4 h5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <%= (current_user.email).sub(/@.*/, '') %>
-          </span>
+          </button>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
               <%= link_to 'Edit Profile', edit_user_registration_path ,class:"dropdown-item"%>

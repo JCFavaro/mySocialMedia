@@ -30,3 +30,8 @@
 .bgBordo {
     background-color: #294064 !important;
 } 
+
+#buttonNav:focus {
+    outline:none;
+    box-shadow: none;
+}

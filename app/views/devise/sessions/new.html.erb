@@ -1,7 +1,7 @@
-<div class="d-flex flex-column justify-content-center h-100 text-center text-white">
-  <h2>Log in</h2>
+<div class="h-100 text-center text-white d-flex flex-column justify-content-center align-items-center">
+<h2>Log in</h2>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="field my-3">
+    <div class="field my-3"> 
       <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", placeholder:"Email address" %>
     </div>
     <div class="field my-3">
