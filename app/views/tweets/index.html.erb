@@ -1,20 +1,24 @@
 <% if user_signed_in? %>
   <div class="h-100 text-center text-white d-flex flex-column align-items-center">
-    <h1 class="text-center">See what's happening!</h1>
-    <div class="mt-3">
+    <h1 class="text-center mt-3">See what's happening!</h1>
+    <div class="mt-3 card border border-dark">
       <% @tweets.each do |tweet| %>
-        <p class="fw-bold text-capitalize pt-3" id="ownerTweet"><%=tweet.user.email.sub(/@.*/, '')%></p>
-        <div class="border border-dark rounded text-break p-1 mb-1" id="singularTweet">
+      <div class="card-body">
+        <p class=" card-title border-bottom border-success fw-bold text-capitalize" id="ownerTweet"><%=tweet.user.email.sub(/@.*/, '')%></p>
+        <div class="card-text text-break p-2 my-2 singularTweet" >
           <%= tweet.body%>
         </div>
-        <%= link_to 'Show', tweet, class:"btn btn-sm btn-dark mb-1"%>
+        <%= link_to 'Show', tweet, class:"card-link btn btn-sm btn-primary mb-1"%>
         <% if tweet.user == current_user %>
-          <%= link_to 'Edit', edit_tweet_path(tweet), class:"btn btn-sm btn-warning mb-1" %>
-          <%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn mb-1 btn-sm btn-danger" %>
+          <%= link_to 'Edit', edit_tweet_path(tweet), class:"card-link btn btn-sm btn-warning mb-1" %>
+          <%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' }, class:"card-link btn mb-1 btn-sm btn-danger" %>
         <% end %>
+        </div>
       <% end %>
     </div>
-  <% else %>
-    <h1>Hey!, sign in to see all tweets!</h1>
+  </div>
+<% else %>
+  <div class="h-100 text-center text-white d-flex flex-column justify-content-center align-items-center">
+    <h1>Hey!, sign in to use your favorite social media!</h1>
   </div>
 <% end %>

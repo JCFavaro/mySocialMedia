@@ -10,12 +10,12 @@
     </div>
   <% end %>
   <div class="form-floating">
-    <%= form.text_field :body, class:"form-control", placeholder: "What are you thinking?" %>
+    <%= form.text_field :body, class:"text-wrap text-break" ,style:"height: 100px;", placeholder: "What are you thinking?" %>
   </div>
   <div class="form-floating">
     <%= form.number_field :user_id, id: :tweet_user_id, class:"form-control", value: current_user.id, type: :hidden %>
   </div>
-  <div class="actions">
+  <div class="actions my-2">
     <%= form.submit %>
   </div>
 <% end %>

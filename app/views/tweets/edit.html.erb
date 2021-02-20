@@ -1,6 +1,13 @@
-<h1>Editing Tweet</h1>
-
-<%= render 'form', tweet: @tweet %>
-
-<%= link_to 'Show', @tweet %> |
-<%= link_to 'Back', tweets_path %>
+<div class="h-100 text-center text-white d-flex flex-column justify-content-center align-items-center">
+  <div class="card border border-dark">
+    <div class="card-body">
+      <div class="card-title">
+        <h1>Editing Tweet</h1>
+      </div>
+      <div class="card-text text-break p-1 mt-4 mb-2">
+        <%= render 'form', tweet: @tweet %>
+      </div>
+      <%= link_to 'Show', @tweet, class:"btn btn-primary" %> |
+      <%= link_to 'Back', tweets_path, class:"btn btn-secondary" %>
+    </div>
+  </div>

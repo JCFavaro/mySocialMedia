@@ -19,7 +19,7 @@
 }
 
 
-#singularTweet{
+.singularTweet{
     width: 50vh;
 }
 
@@ -34,4 +34,8 @@
 #buttonNav:focus {
     outline:none;
     box-shadow: none;
+}
+
+.card-body {
+    background-color: #212529;
 }
