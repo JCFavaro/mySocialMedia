@@ -30,7 +30,8 @@ Simple twitter clon, we can:
 - Model-View-Controller (MVC) architecture
 - CRUD operations
 - Authentication
-- Authorization, just can modify or delete our tweets.
+- Authorization, just can modify or delete our tweets
+- Responsive design
 
 ## Deploy 📦
 
