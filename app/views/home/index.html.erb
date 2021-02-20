@@ -6,7 +6,7 @@
       <div class="card border border-dark">
       <div class="card-body">
         <% if tweet.user == current_user %>
-          <div class="card-text text-break p-2 mb-2 singularTweet">
+          <div class="card-text text-break p-2 mb-2">
             <%= tweet.body%>
           </div>
           <%= link_to 'Show', tweet, class:"btn btn-sm btn-primary mb-2"%>

@@ -5,7 +5,7 @@
       <% @tweets.each do |tweet| %>
       <div class="card-body">
         <p class=" card-title border-bottom border-success fw-bold text-capitalize" id="ownerTweet"><%=tweet.user.email.sub(/@.*/, '')%></p>
-        <div class="card-text text-break p-2 my-2 singularTweet" >
+        <div class="card-text text-break p-2 my-2" >
           <%= tweet.body%>
         </div>
         <%= link_to 'Show', tweet, class:"card-link btn btn-sm btn-primary mb-1"%>

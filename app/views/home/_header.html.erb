@@ -1,5 +1,5 @@
 <nav class="navbar flex-sm-column navbar-expand-sm navbar-dark bg-dark h-sm-100 fixed-left border-md-end border-md-dark rounded-md-end">
-  <%= link_to 'My Social App', root_path , class:"navbar-brand mt-sm-5 ms-sm-2" %>
+  <%= link_to 'My Social App', root_path , class:"navbar-brand mt-sm-5 ms-sm-2 mx-3" %>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,7 +7,7 @@
     <ul class="navbar-nav me-sm-auto mb-sm-2 flex-sm-column">
       <% if user_signed_in? %>
         <li class="dropdown dropend">
-          <button id="buttonNav" class="nav-link text-white btn btn-sm-lg decoration-none text-capitalize dropdown-toggle my-sm-4 h5-sm" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button id="buttonNav" class="nav-link  mx-3 mx-sm-0 text-white btn btn-sm-lg decoration-none text-capitalize dropdown-toggle my-sm-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <%= (current_user.email).sub(/@.*/, '') %>
           </button>
           <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
@@ -20,18 +20,18 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <%= link_to 'My Profile', index_path ,class:"nav-link active my-sm-4 h5-sm"%>
+        <li class="nav-item mx-3 mx-sm-0">
+          <%= link_to 'My Profile', index_path ,class:"nav-link active my-sm-4"%>
         </li>
-        <li class="nav-item">
-          <%= link_to '¡Write a Tweet!', new_tweet_path ,class:"nav-link active my-sm-4 h5-sm"%>
+        <li class="nav-item mx-3 mx-sm-0">
+          <%= link_to '¡Write a Tweet!', new_tweet_path ,class:"nav-link active my-sm-4"%>
         </li>
       <% elsif %>
-        <li class="nav-item">
-          <%= link_to 'Sign Up',  new_user_registration_path ,class:"nav-link active my-sm-4 h5-sm"%>
+        <li class="nav-item mx-3 mx-sm-0">
+          <%= link_to 'Sign Up',  new_user_registration_path ,class:"nav-link active my-sm-4"%>
         </li>
-        <li class="nav-item">
-          <%= link_to 'Sign In', new_user_session_path ,class:"nav-link active my-sm-4 h5-sm"%>
+        <li class="nav-item mx-3 mx-sm-0">
+          <%= link_to 'Sign In', new_user_session_path ,class:"nav-link active my-sm-4"%>
         </li>
       <% end %>
     </ul>
