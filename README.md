@@ -33,7 +33,7 @@ Simple twitter clon, we can:
 
 ## Deploy 📦
 
-- [ ] Soon
+- [X] [https://socialrailsmedia.herokuapp.com/](https://socialrailsmedia.herokuapp.com/)
 
 ---
 ⌨️ with ❤️ by [Juan Cruz Favaro](https://github.com/JCFavaro) 😊
